@@ -1,4 +1,4 @@
-"""Obey URL Configuration
+"""superlists URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -18,4 +18,5 @@ from lists import views
 
 urlpatterns = [
     path('', views.home_page, name='home'),
+    path('lists/the-only-list-in-the-world/', views.view_list, name='view_list')
 ]
